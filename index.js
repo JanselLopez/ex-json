@@ -1,6 +1,6 @@
 const express = require ('express');
 const pool = require ('./db');
-const PORT = 3000;
+const PORT = 3010;
 
 const app = express ();
 
