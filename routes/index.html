@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exjsondoc</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+    <style>
+      body {
+        zoom: 120%;
+      }
+    </style>
+  </head>
+
+  <body class="stackedit">
+    <div class="stackedit__left">
+      <div class="stackedit__toc">
+        <ul style="padding-left: 5rem; padding-top: 5rem">
+          <li><a href="#exjson-">ExJson </a></li>
+          <li><a href="#quick-start">Quick Start</a></li>
+          <li>
+            <a href="#tutorial">Tutorial</a>
+            <ul>
+              <li><a href="#how-it-works">How it works</a></li>
+              <li><a href="#create-models">Create models</a></li>
+              <li><a href="#data-types">Data Types</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="stackedit__right">
+      <div class="stackedit__html">
+        <h1 id="exjson-">
+          ExJson
+          <img
+            src="https://fonts.gstatic.com/s/e/notoemoji/15.0/1f3f9/32.png"
+            alt="🏹"
+          />
+        </h1>
+        <p>
+          Hi! I’m the <strong>ExJson</strong> doc. If you want to learn about
+          exjson framework and how to host your own rest api, you can read me.
+        </p>
+        <h1 id="quick-start">Quick Start</h1>
+        <ol>
+          <li>
+            Install the npm dependecy
+            <blockquote>
+              <p>npm i exjson</p>
+            </blockquote>
+          </li>
+          <li>Create a index.json file in the root of your proyect</li>
+          <li>
+            Write this on the file created in the previos step
+            <pre
+              class="language-json"
+            ><code class="prism  language-json"><span class="token string">"models"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>  
+	<span class="token string">"user"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>  
+		<span class="token string">"id"</span><span class="token punctuation">:</span><span class="token string">"serial-PK"</span><span class="token punctuation">,</span>  
+		<span class="token string">"username"</span><span class="token punctuation">:</span><span class="token string">"string"</span><span class="token punctuation">,</span>  
+		<span class="token string">"password"</span><span class="token punctuation">:</span><span class="token string">"string"</span>  
+	<span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>  
+</code></pre>
+          </li>
+        </ol>
+        <p>
+          <strong>That is all!!</strong> You already created a model user with
+          an id, an username and a password
+        </p>
+        <h1 id="tutorial">Tutorial</h1>
+        <p>
+          ExJson is a <strong>express framework</strong> that allow you to
+          create a <strong>rest api easier and faster</strong> using
+          <strong>jsons</strong> files
+        </p>
+        <h2 id="how-it-works">How it works</h2>
+        <p>For understand how it works you can see this graph.</p>
+        <pre
+          class="language-mermaid"
+        ><svg id="mermaid-svg-pozpf2Ny47F37Wgx" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="62.71665954589844" style="max-width: 599.9833374023438px;" viewBox="0 0 599.9833374023438 62.71665954589844"><style>#mermaid-svg-pozpf2Ny47F37Wgx{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}#mermaid-svg-pozpf2Ny47F37Wgx .error-icon{fill:#552222;}#mermaid-svg-pozpf2Ny47F37Wgx .error-text{fill:#552222;stroke:#552222;}#mermaid-svg-pozpf2Ny47F37Wgx .edge-thickness-normal{stroke-width:2px;}#mermaid-svg-pozpf2Ny47F37Wgx .edge-thickness-thick{stroke-width:3.5px;}#mermaid-svg-pozpf2Ny47F37Wgx .edge-pattern-solid{stroke-dasharray:0;}#mermaid-svg-pozpf2Ny47F37Wgx .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-svg-pozpf2Ny47F37Wgx .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-svg-pozpf2Ny47F37Wgx .marker{fill:#666;stroke:#666;}#mermaid-svg-pozpf2Ny47F37Wgx .marker.cross{stroke:#666;}#mermaid-svg-pozpf2Ny47F37Wgx svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-svg-pozpf2Ny47F37Wgx .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-svg-pozpf2Ny47F37Wgx .cluster-label text{fill:#333;}#mermaid-svg-pozpf2Ny47F37Wgx .cluster-label span{color:#333;}#mermaid-svg-pozpf2Ny47F37Wgx .label text,#mermaid-svg-pozpf2Ny47F37Wgx span{fill:#000000;color:#000000;}#mermaid-svg-pozpf2Ny47F37Wgx .node rect,#mermaid-svg-pozpf2Ny47F37Wgx .node circle,#mermaid-svg-pozpf2Ny47F37Wgx .node ellipse,#mermaid-svg-pozpf2Ny47F37Wgx .node polygon,#mermaid-svg-pozpf2Ny47F37Wgx .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-svg-pozpf2Ny47F37Wgx .node .label{text-align:center;}#mermaid-svg-pozpf2Ny47F37Wgx .node.clickable{cursor:pointer;}#mermaid-svg-pozpf2Ny47F37Wgx .arrowheadPath{fill:#333333;}#mermaid-svg-pozpf2Ny47F37Wgx .edgePath .path{stroke:#666;stroke-width:1.5px;}#mermaid-svg-pozpf2Ny47F37Wgx .flowchart-link{stroke:#666;fill:none;}#mermaid-svg-pozpf2Ny47F37Wgx .edgeLabel{background-color:white;text-align:center;}#mermaid-svg-pozpf2Ny47F37Wgx .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-svg-pozpf2Ny47F37Wgx .cluster rect{fill:hsl(210,66.6666666667%,95%);stroke:#26a;stroke-width:1px;}#mermaid-svg-pozpf2Ny47F37Wgx .cluster text{fill:#333;}#mermaid-svg-pozpf2Ny47F37Wgx .cluster span{color:#333;}#mermaid-svg-pozpf2Ny47F37Wgx div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160,0%,93.3333333333%);border:1px solid #26a;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-svg-pozpf2Ny47F37Wgx:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#mermaid-svg-pozpf2Ny47F37Wgx flowchart{fill:apa;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" style="opacity: 1;" id="L-A-B"><path class="path" d="M87.18333435058594,31.35832977294922L112.18333435058594,31.35832977294922L137.18333435058594,31.35832977294922" marker-end="url(https://stackedit.io/app#arrowhead304)" style="fill:none"></path><defs><marker id="arrowhead304" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-B LE-C" style="opacity: 1;" id="L-B-C"><path class="path" d="M249.86666870117188,31.35832977294922L274.8666687011719,31.35832977294922L299.8666687011719,31.35832977294922" marker-end="url(https://stackedit.io/app#arrowhead305)" style="fill:none"></path><defs><marker id="arrowhead305" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-C LE-D" style="opacity: 1;" id="L-C-D"><path class="path" d="M392.4499969482422,31.35832977294922L417.4499969482422,31.35832977294922L442.4499969482422,31.35832977294922" marker-end="url(https://stackedit.io/app#arrowhead306)" style="fill:none"></path><defs><marker id="arrowhead306" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-C" class="edgeLabel L-LS-B' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" style="opacity: 1;" id="flowchart-A-2015" transform="translate(47.59166717529297,31.35832977294922)"><rect rx="0" ry="0" x="-39.59166717529297" y="-23.35832977294922" width="79.18333435058594" height="46.71665954589844" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-29.59166717529297,-13.358329772949219)"><foreignObject width="59.18333435058594" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Json file</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-2016" transform="translate(193.5250015258789,31.35832977294922)"><rect rx="0" ry="0" x="-56.34166717529297" y="-23.35832977294922" width="112.68333435058594" height="46.71665954589844" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-46.34166717529297,-13.358329772949219)"><foreignObject width="92.68333435058594" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">express code</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-2018" transform="translate(346.15833282470703,31.35832977294922)"><rect rx="0" ry="0" x="-46.291664123535156" y="-23.35832977294922" width="92.58332824707031" height="46.71665954589844" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-36.291664123535156,-13.358329772949219)"><foreignObject width="72.58332824707031" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">postgresql</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-2020" transform="translate(517.216667175293,31.35832977294922)"><rect rx="0" ry="0" x="-74.76667022705078" y="-23.35832977294922" width="149.53334045410156" height="46.71665954589844" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-64.76667022705078,-13.358329772949219)"><foreignObject width="129.53334045410156" height="26.716659545898438"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">functional rest api</div></foreignObject></g></g></g></g></g></g></svg></pre>
+        <ol>
+          <li>First the user wirte a json file like “index.json”.</li>
+          <li>
+            Express read this file and transform his data in endpoints and
+            postgres entities.
+          </li>
+          <li>It generate a functional rest api.</li>
+        </ol>
+        <h2 id="create-models">Create models</h2>
+        <p>The models are created like:</p>
+        <pre
+          class="language-json"
+        ><code class="prism  language-json"><span class="token string">"models"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>  
+	<span class="token string">"model_name"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>  
+		<span class="token string">"id"</span><span class="token punctuation">:</span><span class="token string">"datatype-PK"</span><span class="token punctuation">,</span>  
+		<span class="token string">"attribute"</span><span class="token punctuation">:</span><span class="token string">"datatype"</span>  
+	<span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>  
+</code></pre>
+        <p>Let see an <strong>example</strong>:</p>
+        <pre
+          class="language-json"
+        ><code class="prism  language-json"><span class="token string">"models"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>  
+	<span class="token string">"user"</span><span class="token punctuation">:</span><span class="token punctuation">{</span>  
+		<span class="token string">"id"</span><span class="token punctuation">:</span><span class="token string">"serial-PK"</span><span class="token punctuation">,</span>  
+		<span class="token string">"username"</span><span class="token punctuation">:</span><span class="token string">"string"</span><span class="token punctuation">,</span>  
+		<span class="token string">"password"</span><span class="token punctuation">:</span><span class="token string">"string"</span>  
+	<span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>  
+</code></pre>
+        <p>
+          Here we created a “user” model with an id, an username and a password.
+        </p>
+        <h2 id="data-types">Data Types</h2>
+        <p>
+          By default the datatype is string, but there are other types like:
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>boolean</td>
+              <td>true or false</td>
+            </tr>
+            <tr>
+              <td>int</td>
+              <td>number until 64 bits</td>
+            </tr>
+            <tr>
+              <td>serial</td>
+              <td>auto increment int</td>
+            </tr>
+            <tr>
+              <td>string</td>
+              <td>chain of characters</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
